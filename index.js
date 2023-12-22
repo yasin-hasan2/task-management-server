@@ -113,7 +113,6 @@ async function run() {
 
                 const taskResult = await taskCollection.deleteOne(query); 
                 const completeTaskResult = await completeTaskCollection.deleteMany(query);
-         
                 const result = {
                     task: taskResult,
                     completeTask: completeTaskResult,
